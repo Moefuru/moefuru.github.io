@@ -14,22 +14,22 @@
     
     
     
-    <title>Hello World | 喵帕斯的博客</title>
+    <title>CRLF和LF 导致的问题 | 喵帕斯的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="首先CF LF是什么?CR：Carriage Return  即“回车”LF：Line Feed 即“换行”  导致的问题有时候执行php脚本会出现这个问题#&#x2F;usr&#x2F;local&#x2F;php&#x2F;bin&#x2F;php^Muinx的文件在windows打开变成一行（目前win10没有发现这个问题） 原因主要是由windows与linux的换行符不一致导致的linux的换行符为 LF \n windows的换行符为">
 <meta name="keywords" content="喵帕斯,博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.awuawu.vip&#x2F;2019&#x2F;10&#x2F;24&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="CRLF和LF 导致的问题">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.awuawu.vip&#x2F;2019&#x2F;10&#x2F;28&#x2F;CF%E5%92%8CLF&#x2F;index.html">
 <meta property="og:site_name" content="喵帕斯的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="首先CF LF是什么?CR：Carriage Return  即“回车”LF：Line Feed 即“换行”  导致的问题有时候执行php脚本会出现这个问题#&#x2F;usr&#x2F;local&#x2F;php&#x2F;bin&#x2F;php^Muinx的文件在windows打开变成一行（目前win10没有发现这个问题） 原因主要是由windows与linux的换行符不一致导致的linux的换行符为 LF \n windows的换行符为">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-10-24T09:35:17.594Z">
+<meta property="og:updated_time" content="2019-10-28T09:20:40.994Z">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="喵帕斯的博客" href="/atom.xml">
@@ -125,7 +125,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Hello World</div>
+        <div class="flex-col header-title ellipsis">CRLF和LF 导致的问题</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -147,11 +147,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">CRLF和LF 导致的问题</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-10-24T09:35:17.594Z" itemprop="datePublished" class="page-time">
-  2019-10-24
+                <time datetime="2019-10-28T08:58:05.209Z" itemprop="datePublished" class="page-time">
+  2019-10-28
 </time>
 
 
@@ -170,18 +170,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#首先CF-LF是什么"><span class="post-toc-number">1.</span> <span class="post-toc-text">首先CF LF是什么?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#导致的问题"><span class="post-toc-number">2.</span> <span class="post-toc-text">导致的问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原因"><span class="post-toc-number">3.</span> <span class="post-toc-text">原因</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解决办法"><span class="post-toc-number">4.</span> <span class="post-toc-text">解决办法</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-hello-world"
+<article id="post-CF和LF"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Hello World</h1>
+        <h1 class="post-card-title">CRLF和LF 导致的问题</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-10-24 17:35:17" datetime="2019-10-24T09:35:17.594Z"  itemprop="datePublished">2019-10-24</time>
+            <time class="post-time" title="2019-10-28 16:58:05" datetime="2019-10-28T08:58:05.209Z"  itemprop="datePublished">2019-10-28</time>
 
             
 
@@ -194,19 +194,11 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <h3 id="首先CF-LF是什么"><a href="#首先CF-LF是什么" class="headerlink" title="首先CF LF是什么?"></a>首先CF LF是什么?</h3><p>CR：Carriage Return  即“回车”<br>LF：Line Feed 即“换行” </p>
+<h3 id="导致的问题"><a href="#导致的问题" class="headerlink" title="导致的问题"></a>导致的问题</h3><p>有时候执行php脚本会出现这个问题#/usr/local/php/bin/php^M<br>uinx的文件在windows打开变成一行（目前win10没有发现这个问题）</p>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>主要是由windows与linux的换行符不一致导致的<br>linux的换行符为 LF \n windows的换行符为 CRLF \r\n</p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>使用编辑器切换换行符为LF保存文件即可解决</p>
+<p>具体参考: <a href="https://www.jianshu.com/p/ec9564fe1c2b" target="_blank" rel="noopener">https://www.jianshu.com/p/ec9564fe1c2b</a></p>
 
         </div>
 
@@ -215,12 +207,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-10-24T09:35:17.594Z" itemprop="dateUpdated">2019-10-24 17:35:17</time>
+    Last updated: <time datetime="2019-10-28T09:20:40.994Z" itemprop="dateUpdated">2019-10-28 17:20:40</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/10/24/hello-world/" target="_blank" rel="external">http://blog.awuawu.vip/2019/10/24/hello-world/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/10/28/CF%E5%92%8CLF/" target="_blank" rel="external">http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/</a>
         
     </div>
     
@@ -249,7 +241,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/24/hello-world/&title=《Hello World》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -259,22 +251,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/24/hello-world/&title=《Hello World》 — 喵帕斯的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/24/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/24/hello-world/&via=http://blog.awuawu.vip" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CRLF和LF 导致的问题》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&via=http://blog.awuawu.vip" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/24/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -294,16 +286,16 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2019/10/28/CF%E5%92%8CLF/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">CRLF和LF 导致的问题</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/10/24/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -402,7 +394,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/24/hello-world/&title=《Hello World》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -412,22 +404,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/24/hello-world/&title=《Hello World》 — 喵帕斯的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/24/hello-world/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hello World》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/24/hello-world/&via=http://blog.awuawu.vip" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CRLF和LF 导致的问题》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&via=http://blog.awuawu.vip" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/24/hello-world/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -438,7 +430,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3aQZLCMAwFUe5/6cwWiiHpLxmqIndWKYZgvyw0kqXHA1/H0/X8yfs9+T5fZfElQ4aM2zKO04ss0N8iWffTd2TIkLEP43xzNRIPxDyUf/xchgwZMsDCJJjyICtDhgwZ32OkYP5XGTJkyCBFLA+g/HXwV7asFpchQ8YNGfzU/ff3X+lvyJAh41aMI7zOk7NaaljbycvvyJAhYzSj04CshUuS3hUbojJkyBjK4IE1LW5r200DNNqiDBkyxjHSOpH8Dm8hFJsTMmTIGM1IH+DjFHwUg4RgPsAhQ4aMqQy+JE8E0/EL9KbPC2YZMmRswOAJHG8V1EYxUrYMGTJmM9IRh5TEmwd86//cy5AhYxtGpzStDVikI2gXLUwZMmQMZXRKx/4RGw/BQadShgwZ4xhp0VijpsdqaXksQ4aM2Yz0sKyW6qXjGsuGLWTIkDGCkT6chsVVRfLF6jJkyBjNqG3rPHR2Ctr0oA3935AhQ8YgBk/peCCuFcm1FydDhozZjDTJ4yMXPHMjieDFPmXIkLEBIxjDaodXnvYFRawMGTI2YPBmYSfTXPVsPLshQ4aM2zKO8EqDLC+A07EzGTJk7MPoBLtOk6BTMHcGPmTIkHFfxqogS0JnJ/W8eFaGDBkbMNLilid8nQM4vlsZMmTI4K3HWpMyPfhDwxYyZMjYnlFLMcnwBC90L2ZGZMiQMY5Bithaqpe+Ah5wZciQsQ+jUzryEBmUo4uoMmTIGMH4A45XvCpVpXDlAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACOElEQVR42u3ay66DMAxF0f7/T3OnHTSwjw1XitkZoT4gq5UsO/bng9fxtVavkM+nT7l5yZAhY1vGcbpWn0kfTO5Z+4wMGTLew1g9eHV9/uDVnVeb4HdYvi5DhgwZ4XWa8MmQIUPG0wGXF7o8+ZMhQ4aMWhFbC6ydwP1ILS5DhowNGfzU/f+vH+lvyJAhYyvGEa5+m5MH5WBXMmTIGM3ojEGkZef5t0hRfZGGypAhYygjvWltJIJvtxagZciQ8QZGp+nYSftqpGXAlSFDxlAGeTsNr3zrvCUQZ7gyZMgYxOBf4w0DwiObOw/Nwf8gQ4aMcYzaQFh60EaSQhKUZciQ8R4GLzL5u+lgGT+w+3EtQ4aM0Yxak5KkcWnSmaaSy3vKkCFjNIMkeTUkL4BbCaIMGTKGMtKmIzlcIw3IThFbrI9lyJCxOSM9SquNaNTY8cyIDBkyXsDgaWItdN47bBH/xjJkyNiWUSsg+fFc2mzgoXbZ35AhQ8YgRm3Mq5Ms8uKWUFvTajJkyNiKURtxiLsNYMyC/xAXCaIMGTJGM/gBGW8w9AcvEF6GDBkvY3RamyTg1kL2xQ5lyJAxlHGEK03a7j1QuzhckyFDxlAGX7UNkSZl2tTkKaYMGTImMdLjNn5wxsvg23oaMmTIGM3ggS8tO0mA7rQWZMiQIYMnfOn4Vy1xfDDgypAhYzTjhgZkqZn6o4iVIUPGaEZ6lN/5CXgqWezEypAhYxyjlneR0a50eKJ2nCdDhozRjD/uDPoIgUiqEAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
