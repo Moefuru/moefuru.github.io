@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.awuawu.vip/"/>
-  <updated>2019-10-28T09:20:40.994Z</updated>
+  <updated>2020-05-27T07:55:15.093Z</updated>
   <id>http://blog.awuawu.vip/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>gromacs安装</title>
+    <link href="http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/"/>
+    <id>http://blog.awuawu.vip/2020/05/27/gromacs安装/</id>
+    <published>2020-05-27T06:45:55.000Z</published>
+    <updated>2020-05-27T07:55:15.093Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="gromacs的官网"><a href="#gromacs的官网" class="headerlink" title="gromacs的官网"></a>gromacs的官网</h3><p><a href="http://gromacs.org" target="_blank" rel="noopener">http://gromacs.org</a></p><h3 id="官方的安装文档"><a href="#官方的安装文档" class="headerlink" title="官方的安装文档"></a>官方的安装文档</h3><blockquote><p>tar xfz gromacs-2020.2.tar.gz<br>cd gromacs-2020.2<br>mkdir build<br>cd build<br>cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON<br>make<br>make check<br>sudo make install<br>source /usr/local/gromacs/bin/GMXRC</p><footer><strong>http://manual.gromacs.org/documentation/current/install-guide/index.html</strong></footer></blockquote><h3 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h3><p>一般情况下按照官方执行上面的命令即可完成安装，但是由于种种原因，安装起来并不理想<br>cmake .. -DGMX_BUILD_OWN_FFTW=ON  DGMX_BUILD_OWN_FFTW 参数设置为ON时将自动下载FFTW（国内下载较慢建议手动安装）<br>有关FFTW安装的更多信息可以转到 <a href="https://blog.mrzhenggang.com/fftw-install/" target="_blank" rel="noopener">https://blog.mrzhenggang.com/fftw-install/</a><br>FFTW下载地址：<a href="http://www.fftw.org/download.html" target="_blank" rel="noopener">http://www.fftw.org/download.html</a><br>安装FFTW：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf fftw-3.3.8.tar.gz  </span><br><span class="line">cd fftw-3.3.8 </span><br><span class="line">./configure  </span><br><span class="line">make  </span><br><span class="line">make install</span><br></pre></td></tr></table></figure><p>接下来我们就可以开始安装gromacs</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tar xfz gromacs-2020.2.tar.gz</span><br><span class="line">cd gromacs-2020.2</span><br><span class="line">mkdir build</span><br><span class="line">cd build</span><br><span class="line">指定FFTW的安装位置 export CMAKE_PREFIX_PATH=FFTW3的安装目录（安装时没有指定路径，默认在/usr/lcoal下）</span><br><span class="line">export CMAKE_PREFIX_PATH=/usr/lcoal/fftw</span><br><span class="line">cmake .. -DGMX_GPU=ON (-DGMX_GPU=ON 启用GPU支持 如果没有GPU 则执行 cmake .. 即可)</span><br><span class="line">make</span><br><span class="line">make check</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure><h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将gromacs加入环境变量</span><br><span class="line">修改~/.bashrc在=最后一行添加 export PATH=&quot;$PATH:/usr/local/gromacs/bin&quot;</span><br><span class="line">执行 source ~/.bashrc</span><br><span class="line">执行 gmx --version 输出gromacs的信息即为安装成功</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;gromacs的官网&quot;&gt;&lt;a href=&quot;#gromacs的官网&quot; class=&quot;headerlink&quot; title=&quot;gromacs的官网&quot;&gt;&lt;/a&gt;gromacs的官网&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://gromacs.org&quot; target=&quot;_
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>CRLF和LF 导致的问题</title>
@@ -30,28 +52,6 @@
       
       
         &lt;h3 id=&quot;首先CF-LF是什么&quot;&gt;&lt;a href=&quot;#首先CF-LF是什么&quot; class=&quot;headerlink&quot; title=&quot;首先CF LF是什么?&quot;&gt;&lt;/a&gt;首先CF LF是什么?&lt;/h3&gt;&lt;p&gt;CR：Carriage Return  即“回车”&lt;br&gt;LF：Line
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.awuawu.vip/2019/10/24/hello-world/"/>
-    <id>http://blog.awuawu.vip/2019/10/24/hello-world/</id>
-    <published>2019-10-24T09:35:17.594Z</published>
-    <updated>2019-10-24T09:35:17.594Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
       
     
     </summary>

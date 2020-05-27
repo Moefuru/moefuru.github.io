@@ -14,22 +14,22 @@
     
     
     
-    <title>CRLF和LF 导致的问题 | 喵帕斯的博客</title>
+    <title>gromacs安装 | 喵帕斯的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="首先CF LF是什么?CR：Carriage Return  即“回车”LF：Line Feed 即“换行”  导致的问题有时候执行php脚本会出现这个问题#&#x2F;usr&#x2F;local&#x2F;php&#x2F;bin&#x2F;php^Muinx的文件在windows打开变成一行（目前win10没有发现这个问题） 原因主要是由windows与linux的换行符不一致导致的linux的换行符为 LF \n windows的换行符为">
+    <meta name="description" content="gromacs的官网http:&#x2F;&#x2F;gromacs.org 官方的安装文档tar xfz gromacs-2020.2.tar.gzcd gromacs-2020.2mkdir buildcd buildcmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ONmakemake checksudo make installsource">
 <meta name="keywords" content="喵帕斯,博客">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CRLF和LF 导致的问题">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.awuawu.vip&#x2F;2019&#x2F;10&#x2F;28&#x2F;CF%E5%92%8CLF&#x2F;index.html">
+<meta property="og:title" content="gromacs安装">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.awuawu.vip&#x2F;2020&#x2F;05&#x2F;27&#x2F;gromacs%E5%AE%89%E8%A3%85&#x2F;index.html">
 <meta property="og:site_name" content="喵帕斯的博客">
-<meta property="og:description" content="首先CF LF是什么?CR：Carriage Return  即“回车”LF：Line Feed 即“换行”  导致的问题有时候执行php脚本会出现这个问题#&#x2F;usr&#x2F;local&#x2F;php&#x2F;bin&#x2F;php^Muinx的文件在windows打开变成一行（目前win10没有发现这个问题） 原因主要是由windows与linux的换行符不一致导致的linux的换行符为 LF \n windows的换行符为">
+<meta property="og:description" content="gromacs的官网http:&#x2F;&#x2F;gromacs.org 官方的安装文档tar xfz gromacs-2020.2.tar.gzcd gromacs-2020.2mkdir buildcd buildcmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ONmakemake checksudo make installsource">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:updated_time" content="2019-10-28T09:20:40.994Z">
+<meta property="og:updated_time" content="2020-05-27T07:55:15.093Z">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="喵帕斯的博客" href="/atom.xml">
@@ -118,7 +118,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">CRLF和LF 导致的问题</div>
+        <div class="flex-col header-title ellipsis">gromacs安装</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -140,11 +140,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">CRLF和LF 导致的问题</h1>
+        <h1 class="title">gromacs安装</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-10-28T08:58:05.209Z" itemprop="datePublished" class="page-time">
-  2019-10-28
+                <time datetime="2020-05-27T06:45:55.000Z" itemprop="datePublished" class="page-time">
+  2020-05-27
 </time>
 
 
@@ -163,18 +163,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#首先CF-LF是什么"><span class="post-toc-number">1.</span> <span class="post-toc-text">首先CF LF是什么?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#导致的问题"><span class="post-toc-number">2.</span> <span class="post-toc-text">导致的问题</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#原因"><span class="post-toc-number">3.</span> <span class="post-toc-text">原因</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解决办法"><span class="post-toc-number">4.</span> <span class="post-toc-text">解决办法</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#gromacs的官网"><span class="post-toc-number">1.</span> <span class="post-toc-text">gromacs的官网</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#官方的安装文档"><span class="post-toc-number">2.</span> <span class="post-toc-text">官方的安装文档</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#开始安装"><span class="post-toc-number">3.</span> <span class="post-toc-text">开始安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装完成"><span class="post-toc-number">4.</span> <span class="post-toc-text">安装完成</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-CF和LF"
+<article id="post-gromacs安装"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">CRLF和LF 导致的问题</h1>
+        <h1 class="post-card-title">gromacs安装</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-10-28 16:58:05" datetime="2019-10-28T08:58:05.209Z"  itemprop="datePublished">2019-10-28</time>
+            <time class="post-time" title="2020-05-27 14:45:55" datetime="2020-05-27T06:45:55.000Z"  itemprop="datePublished">2020-05-27</time>
 
             
 
@@ -187,12 +187,18 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h3 id="首先CF-LF是什么"><a href="#首先CF-LF是什么" class="headerlink" title="首先CF LF是什么?"></a>首先CF LF是什么?</h3><p>CR：Carriage Return  即“回车”<br>LF：Line Feed 即“换行” </p>
-<h3 id="导致的问题"><a href="#导致的问题" class="headerlink" title="导致的问题"></a>导致的问题</h3><p>有时候执行php脚本会出现这个问题#/usr/local/php/bin/php^M<br>uinx的文件在windows打开变成一行（目前win10没有发现这个问题）</p>
-<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>主要是由windows与linux的换行符不一致导致的<br>linux的换行符为 LF \n windows的换行符为 CRLF \r\n</p>
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>使用编辑器切换换行符为LF保存文件即可解决</p>
-<p>具体参考: <a href="https://www.jianshu.com/p/ec9564fe1c2b" target="_blank" rel="noopener">https://www.jianshu.com/p/ec9564fe1c2b</a></p>
+            <h3 id="gromacs的官网"><a href="#gromacs的官网" class="headerlink" title="gromacs的官网"></a>gromacs的官网</h3><p><a href="http://gromacs.org" target="_blank" rel="noopener">http://gromacs.org</a></p>
+<h3 id="官方的安装文档"><a href="#官方的安装文档" class="headerlink" title="官方的安装文档"></a>官方的安装文档</h3><blockquote><p>tar xfz gromacs-2020.2.tar.gz<br>cd gromacs-2020.2<br>mkdir build<br>cd build<br>cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON<br>make<br>make check<br>sudo make install<br>source /usr/local/gromacs/bin/GMXRC</p>
+<footer><strong>http://manual.gromacs.org/documentation/current/install-guide/index.html</strong></footer></blockquote>
 
+
+<h3 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h3><p>一般情况下按照官方执行上面的命令即可完成安装，但是由于种种原因，安装起来并不理想<br>cmake .. -DGMX_BUILD_OWN_FFTW=ON  DGMX_BUILD_OWN_FFTW 参数设置为ON时将自动下载FFTW（国内下载较慢建议手动安装）<br>有关FFTW安装的更多信息可以转到 <a href="https://blog.mrzhenggang.com/fftw-install/" target="_blank" rel="noopener">https://blog.mrzhenggang.com/fftw-install/</a><br>FFTW下载地址：<a href="http://www.fftw.org/download.html" target="_blank" rel="noopener">http://www.fftw.org/download.html</a><br>安装FFTW：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf fftw-3.3.8.tar.gz  </span><br><span class="line">cd fftw-3.3.8 </span><br><span class="line">./configure  </span><br><span class="line">make  </span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<p>接下来我们就可以开始安装gromacs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tar xfz gromacs-2020.2.tar.gz</span><br><span class="line">cd gromacs-2020.2</span><br><span class="line">mkdir build</span><br><span class="line">cd build</span><br><span class="line">指定FFTW的安装位置 export CMAKE_PREFIX_PATH=FFTW3的安装目录（安装时没有指定路径，默认在/usr/lcoal下）</span><br><span class="line">export CMAKE_PREFIX_PATH=/usr/lcoal/fftw</span><br><span class="line">cmake .. -DGMX_GPU=ON (-DGMX_GPU=ON 启用GPU支持 如果没有GPU 则执行 cmake .. 即可)</span><br><span class="line">make</span><br><span class="line">make check</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将gromacs加入环境变量</span><br><span class="line">修改~/.bashrc在=最后一行添加 export PATH=&quot;$PATH:/usr/local/gromacs/bin&quot;</span><br><span class="line">执行 source ~/.bashrc</span><br><span class="line">执行 gmx --version 输出gromacs的信息即为安装成功</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
@@ -200,12 +206,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-10-28T09:20:40.994Z" itemprop="dateUpdated">2019-10-28 17:20:40</time>
+    Last updated: <time datetime="2020-05-27T07:55:15.093Z" itemprop="dateUpdated">2020-05-27 15:55:15</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/10/28/CF%E5%92%8CLF/" target="_blank" rel="external">http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" target="_blank" rel="external">http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/</a>
         
     </div>
     
@@ -230,7 +236,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&title=《gromacs安装》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -240,22 +246,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&title=《gromacs安装》 — 喵帕斯的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CRLF和LF 导致的问题》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&via=http://blog.awuawu.vip" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《gromacs安装》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&via=http://blog.awuawu.vip" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -275,16 +281,16 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">gromacs安装</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/10/28/CF%E5%92%8CLF/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">CRLF和LF 导致的问题</h4>
+      </a>
+    </div>
   
 </nav>
 
@@ -357,7 +363,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&title=《gromacs安装》 — 喵帕斯的博客&pic=http://blog.awuawu.vip/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -367,22 +373,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&title=《CRLF和LF 导致的问题》 — 喵帕斯的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&title=《gromacs安装》 — 喵帕斯的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《CRLF和LF 导致的问题》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/&via=http://blog.awuawu.vip" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《gromacs安装》 — 喵帕斯的博客&url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/&via=http://blog.awuawu.vip" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2019/10/28/CF%E5%92%8CLF/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.awuawu.vip/2020/05/27/gromacs%E5%AE%89%E8%A3%85/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -393,7 +399,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACOElEQVR42u3ay66DMAxF0f7/T3OnHTSwjw1XitkZoT4gq5UsO/bng9fxtVavkM+nT7l5yZAhY1vGcbpWn0kfTO5Z+4wMGTLew1g9eHV9/uDVnVeb4HdYvi5DhgwZ4XWa8MmQIUPG0wGXF7o8+ZMhQ4aMWhFbC6ydwP1ILS5DhowNGfzU/f+vH+lvyJAhYyvGEa5+m5MH5WBXMmTIGM3ojEGkZef5t0hRfZGGypAhYygjvWltJIJvtxagZciQ8QZGp+nYSftqpGXAlSFDxlAGeTsNr3zrvCUQZ7gyZMgYxOBf4w0DwiObOw/Nwf8gQ4aMcYzaQFh60EaSQhKUZciQ8R4GLzL5u+lgGT+w+3EtQ4aM0Yxak5KkcWnSmaaSy3vKkCFjNIMkeTUkL4BbCaIMGTKGMtKmIzlcIw3IThFbrI9lyJCxOSM9SquNaNTY8cyIDBkyXsDgaWItdN47bBH/xjJkyNiWUSsg+fFc2mzgoXbZ35AhQ8YgRm3Mq5Ms8uKWUFvTajJkyNiKURtxiLsNYMyC/xAXCaIMGTJGM/gBGW8w9AcvEF6GDBkvY3RamyTg1kL2xQ5lyJAxlHGEK03a7j1QuzhckyFDxlAGX7UNkSZl2tTkKaYMGTImMdLjNn5wxsvg23oaMmTIGM3ggS8tO0mA7rQWZMiQIYMnfOn4Vy1xfDDgypAhYzTjhgZkqZn6o4iVIUPGaEZ6lN/5CXgqWezEypAhYxyjlneR0a50eKJ2nCdDhozRjD/uDPoIgUiqEAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3au27EMAxEUf//TyttgIXlmaFUiLqqgo1j73HB8PU88hk/5/fzt+v/f6I/5dlxYMCAcSxjTM+cMf+KOkZ/7isVBgwYFzDebq2Ey7cr3QCtPxcGDBgwlNspwVRP8mDAgAFjX8BdG15hwIABY85Qitj5jdzXoRTJW2pxGDBgHMhYlbrt+HnLfAMGDBhHMYZ59n3FUTgwYMDozcjWILLCVblPaS0DBgwYTRkLwpxZDLvvWFrvgAEDxgUMKSqXH5mFbGmNAwYMGK0ZyiKFu/IlPVJu6hmtNxgwYDRluAB9AFlJLu2BKAwYMFoz3EWHSuKYLW0oax8wYMDozTCs0fV6YVwaoMKAAeMahhJq54HSHX+6ZbMxwoQBA0Y7xuJM00z73JTxYyQAAwaMdgzl10o56o4tK2VtGNdhwIBxOMP9g31rXm75+tFBhAEDRjtG2OqSS816Kim9ShgwYLRjuAmfDnaTURfw2m6DAQNGO4a7bKHnmFmSl5XQMGDAuIch1bhRq67S7jf+JcCAAeMCRrZsoV9Tb7d9BGIYMGBcw9BTtHDyUFjdCPuFMGDAOJwxzOOuVrh3UIpqe6YBAwaMwxnunpU7F80WvFaFdRgwYHRirFqzUIYKOsMOuDBgwLiAkQW+ejDNRhEwYMCAkQXTymBSeVlbAi4MGDBaM9wxgM4LB5wwYMC4gKEUsVlrvrJsYbT/YMCA0ZqRfZW1axNuGy4casKAAeM8xh+9Ebwq9tnlmgAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
